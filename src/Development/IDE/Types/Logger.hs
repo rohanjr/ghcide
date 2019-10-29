@@ -18,9 +18,9 @@ import qualified Data.Text as T
 data Priority
 -- Don't change the ordering of this type or you will mess up the Ord
 -- instance
-    = Telemetry -- ^ Events that are useful for gathering user metrics.
-    | Debug -- ^ Verbose debug logging.
+    = Debug -- ^ Verbose debug logging.
     | Info  -- ^ Useful information in case an error has to be understood.
+    | Telemetry -- ^ Events that are useful for gathering user metrics.
     | Warning
       -- ^ These error messages should not occur in a expected usage, and
       -- should be investigated.
